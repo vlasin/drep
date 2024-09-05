@@ -1,0 +1,63 @@
+{
+    "@context": {
+        "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+        "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+        "hashAlgorithm": "CIP100:hashAlgorithm",
+        "body": {
+            "@id": "CIP119:body",
+            "@context": {
+                "references": {
+                    "@id": "CIP119:references",
+                    "@container": "@set",
+                    "@context": {
+                        "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+                        "Other": "CIP100:OtherReference",
+                        "label": "CIP100:reference-label",
+                        "uri": "CIP100:reference-uri"
+                    }
+                },
+                "paymentAddress": "CIP119:paymentAddress",
+                "givenName": "CIP119:givenName",
+                "image": {
+                    "@id": "CIP119:image",
+                    "@context": {
+                        "ImageObject": "https://schema.org/ImageObject"
+                    }
+                },
+                "objectives": "CIP119:objectives",
+                "motivations": "CIP119:motivations",
+                "qualifications": "CIP119:qualifications"
+            }
+        }
+    },
+    "hashAlgorithm": "blake2b-256",
+    "body": {
+        "paymentAddress": "addr1q83849s8ysdpjxr3w86avtendhtuf7xfp6x4jshyjr5x423v8gkhzvhxkzj68ymq44exy7qhf85s4amvch3thp6z782swp7xnw",
+        "givenName": "Vladimir Sinyakov",
+        "image": {
+            "@type": "ImageObject",
+            "contentUrl": "https://github.com/vlasin/drep/blob/main/assets/vs.jpg?raw=true",
+            "sha256": "7354be743d72b6e8cfaddbf41f25610472446782e21cbe83f6bfa5b22cf369df"
+        },
+        "objectives": "Vote on governance proposals that ensure Cardano's sustainable development. Explain technically complex proposals to my delegation and the broader community. Support responsible spending of the Cardano's treasury funds.",
+        "motivations": "I would like to see the Cardano governance becoming an example of a properly functioning democratic governance system that would inspire people all over the world. Being a part of the Cardano ecosystem for more than three years, I want it to have a bright and prosperous future. To achieve this, we need to spend treasury funds responsibly and in the right proportion on both technical upgrades and applications that drive adoption. I believe I could be helpful in explaining governance decisions, especially technical ones, to the community.",
+        "qualifications": "I spent more than three years in the Cardano ecosystem as a builder and entrepreneur, working on infrastructure and development tools as well as DApps. I am the founder of zkFold, a company that develops infrastructure solutions and tools for developers. I am also the original founder of the ENCOINS protocol. I have a PhD in applied mathematics, and I have spent more than eight years in research and have publications in the top journals in the field of control theory.",
+        "references": [
+          {
+            "@type": "Link",
+            "label": "X account",
+            "uri": "https://x.com/vlas1n"
+          },
+          {
+            "@type": "Link",
+            "label": "LinkedIn account",
+            "uri": "https://www.linkedin.com/in/vladimir-sinyakov"
+          },
+          {
+            "@type": "Other",
+            "label": "Company website",
+            "uri": "https://zkfold.io"
+          }
+        ]
+    }
+}
